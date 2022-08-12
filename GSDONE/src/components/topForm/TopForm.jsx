@@ -26,7 +26,7 @@ export default function TopForm({ Open, setOpen, Data, setData, currAmount, setc
   } = useForm();
 
   // if true - form is validated, User is allowed to open modal window
-  let [formValidated, setformValidated] = useState(false);
+  let [formValidated, setformValidated] = useState(true);
 
   const [CategsInForm, setCategsInForm] = useState([]);
   const [Country, setCountry] = useState([]);
