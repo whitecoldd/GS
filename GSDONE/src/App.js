@@ -40,6 +40,8 @@ function App() {
     return () => document.removeEventListener("keydown", handleEscapeKey);
   }, []);
   let [currAmount, setcurrAmount] = useState(0);
+  let interval = (24 / totalAmount) * 60 * 60 * 1000;
+
   const func = () => {
     let date = new Date();
     let currDate =
@@ -55,7 +57,16 @@ function App() {
     <div className="App">
       <Header />
       <main className="main">
-        <TopForm Open={Open} Data={Data} setcurrAmount={setcurrAmount} interval={interval} func={func} currAmount={currAmount} setData={setData} setOpen={setOpen} />
+        <TopForm
+          Open={Open}
+          Data={Data}
+          setcurrAmount={setcurrAmount}
+          interval={interval}
+          func={func}
+          currAmount={currAmount}
+          setData={setData}
+          setOpen={setOpen}
+        />
         <Roadmap />
         <TableComponent currAmount={currAmount} setcurrAmount={setcurrAmount} />
         <Modal isOpen={Open} style={customStyles}>

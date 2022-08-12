@@ -37,7 +37,6 @@ export default function TopForm({ Open, setOpen, Data, setData, currAmount, setc
     setCountry(countries);
   }, []);
 
-  let interval = (24 / totalAmount) * 60 * 60 * 1000;
   
 
   
