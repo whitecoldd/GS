@@ -71,6 +71,7 @@ export default function TopForm({ Open, setOpen, Data, setData, currAmount, setc
       console.log(res.data);
       setOpen(!Open);
       setData(true);
+      setformValidated(true);
     } catch (e) {
       console.log(e);
       setformValidated(false);
