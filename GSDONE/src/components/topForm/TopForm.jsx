@@ -15,7 +15,7 @@ const countries = [
   { label: "Cahul", id: 3 },
 ];
 
-export default function TopForm({ Open, setOpen, Data, setData, currAmount, setcurrAmount }) {
+export default function TopForm({ Open, setOpen, Data, setData, currAmount, setcurrAmount, interval, func }) {
   let [totalAmount, settotalAmount] = useState(1000);
  
 

@@ -55,7 +55,7 @@ function App() {
     <div className="App">
       <Header />
       <main className="main">
-        <TopForm Open={Open} Data={Data} setcurrAmount={setcurrAmount} currAmount={currAmount} setData={setData} setOpen={setOpen} />
+        <TopForm Open={Open} Data={Data} setcurrAmount={setcurrAmount} interval={interval} func={func} currAmount={currAmount} setData={setData} setOpen={setOpen} />
         <Roadmap />
         <TableComponent currAmount={currAmount} setcurrAmount={setcurrAmount} />
         <Modal isOpen={Open} style={customStyles}>
