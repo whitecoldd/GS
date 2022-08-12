@@ -30,11 +30,13 @@ const TableComponent = (currAmount, setcurrAmount) => {
   //     }
   //     return [random2, random1];
   //   }, [random2, random1]);
-  useEffect(() => {
-    const [Num, setNum] = useState([]);
-    setNum(currAmount);
-  }, [currAmount]);
 
+  // const tableAmount =() =>{
+  //   for (let i = currAmount-7; i < currAmount; i++) {
+  //       return i      
+  //   }
+  // }
+  console.log(typeof(currAmount))
   return (
     <Container className="clutch" id="table">
       <div className="title">
@@ -44,7 +46,7 @@ const TableComponent = (currAmount, setcurrAmount) => {
         <Container key={i} className="clutch">
           <Row className="clutch">
             <Col className="row-like">
-              <span className="bold">#{Num - 7}</span>
+              <span className="bold">#{currAmount}</span>
               <span className="start">{data.company}</span>
               <span>{data.win_check}$</span>
               <span>{dayjs(data.createdAt).format("DD.MM.YYYY")}</span>
