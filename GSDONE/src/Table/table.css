@@ -1,0 +1,40 @@
+.main > .clutch {
+    margin-top: 200px;
+}
+.row-like span {
+    width: 230px;
+}
+.row-like span:last-child {
+    width: 60px;
+}
+.clutch .title {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D00374;
+    margin-bottom: 60px;
+}
+.clutch .title span {
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 500px) {
+    .row-like span {
+        width: 80px;
+        font-size: 12px;
+    }
+    .row-like .bold {
+        width: 40px;
+    }
+    .row-like span:nth-child(3) {
+        width: 40px;
+    }
+    .row-like span:last-child {
+        width: 40px;
+    }
+}
