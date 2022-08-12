@@ -30,8 +30,11 @@ const TableComponent = (currAmount, setcurrAmount) => {
   //     }
   //     return [random2, random1];
   //   }, [random2, random1]);
-  const [Num, setNum] = useState([]);
-  setNum(currAmount);
+  useEffect(() => {
+    const [Num, setNum] = useState([]);
+    setNum(currAmount);
+  }, [currAmount]);
+
   return (
     <Container className="clutch" id="table">
       <div className="title">
