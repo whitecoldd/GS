@@ -52,8 +52,7 @@ function App() {
       (Date.now() - newTime) /
       interval
     ).toFixed(); /*  / 1000 / 60 / 60 */
-    setcurrAmount(AmountNow);
-    console.log(typeof AmountNow)
+    setcurrAmount(Number(AmountNow));
   };
   return (
     <div className="App">
