@@ -36,7 +36,7 @@ const TableComponent = (currAmount, setcurrAmount) => {
   //       return i      
   //   }
   // }
-  console.log(typeof(currAmount))
+  console.log(typeof currAmount)
   return (
     <Container className="clutch" id="table">
       <div className="title">

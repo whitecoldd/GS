@@ -53,6 +53,7 @@ function App() {
       interval
     ).toFixed(); /*  / 1000 / 60 / 60 */
     setcurrAmount(AmountNow);
+    console.log(typeof AmountNow)
   };
   return (
     <div className="App">
