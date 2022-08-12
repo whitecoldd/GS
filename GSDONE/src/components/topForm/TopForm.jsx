@@ -184,7 +184,7 @@ export default function TopForm({ Open, setOpen, Data, setData, currAmount, setc
             {errors.country && <p>Please fill in all fields</p>}
             {errors.email && <p>Please fill in all fields</p>}
             {errors.egift_number && <p>Please fill in all fields</p>}
-            {formValidated && <p>This e-gift number has already been used</p>}
+            {!formValidated && <p>This e-gift number has already been used</p>}
           </form>
         </div>
       </div>
