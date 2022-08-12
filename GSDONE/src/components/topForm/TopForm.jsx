@@ -16,7 +16,6 @@ const countries = [
 ];
 
 export default function TopForm({ Open, setOpen, Data, setData, currAmount, setcurrAmount, interval, func }) {
-  let [totalAmount, settotalAmount] = useState(1000);
  
 
   let [formData, setFormData] = useState([]);

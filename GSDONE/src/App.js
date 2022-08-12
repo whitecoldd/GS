@@ -39,6 +39,7 @@ function App() {
     document.addEventListener("keydown", handleEscapeKey);
     return () => document.removeEventListener("keydown", handleEscapeKey);
   }, []);
+  let [totalAmount, settotalAmount] = useState(1000);
   let [currAmount, setcurrAmount] = useState(0);
   let interval = (24 / totalAmount) * 60 * 60 * 1000;
 
@@ -66,6 +67,7 @@ function App() {
           currAmount={currAmount}
           setData={setData}
           setOpen={setOpen}
+          totalAmount={totalAmount}
         />
         <Roadmap />
         <TableComponent currAmount={currAmount} setcurrAmount={setcurrAmount} />
