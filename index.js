@@ -13,7 +13,7 @@ dotenv.config();
 // const URI = `/webhook/${TOKEN}`
 // const WEBHOOK_URL = SERVER_URL + URI
 mongoose
-  .connect(process.env.MONGODB_URI || process.env.MONGODB_URL)
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("Connection Successful"))
   .catch((err) => {
     console.log(err);
