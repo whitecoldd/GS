@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
   background-color: #111028;
@@ -18,19 +18,20 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: unset;
-      align-content: unset;
+  align-content: unset;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -47,98 +48,108 @@ ul {
   list-style: none;
 }
 
+
+
 .btn {
-  /* width: 224px; */
-  padding: 10px 55px;
+  /* width: 224px*$vw; */
+  padding: 0.19444vw 2.81944vw;
   background: -webkit-gradient(linear, right top, left top, from(#43153C), to(#AE0950));
   background: linear-gradient(270deg, #43153C 0%, #AE0950 100%);
-  border-radius: 50px;
+  border-radius: 3.47222vw;
   border: none;
   outline: none;
   cursor: pointer;
   font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 1.16667vw;
+  line-height: 2.43056vw;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 55px;
+  margin-bottom: 0.81944vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: unset;
-      align-content: unset;
+  align-content: unset;
 }
-
 
 .blurCircle {
-  width: 493px;
-  height: 493px;
+  width: 34.23611vw;
+  height: 34.23611vw;
   background: #00D1FF;
-  filter: blur(894px);
-
+  -webkit-filter: blur(62.08333vw);
+          filter: blur(62.08333vw);
   position: absolute;
   z-index: -1;
+
+  /* display: none; */
 }
+
 .blurCircle_1 {
-  top: -248px;
+  top: -17.22222vw;
   right: 0;
 }
+
 .blurCircle_2 {
-  top: 1000px;
+  top: 69.44444vw;
   left: 0;
 }
+
+/* .blurCircle_3 {
+  top: 104.16667vw;
+  right: 0;
+}
+
+.blurCircle_4 {
+  top: 138.88889vw;
+  left: 0;
+} */
+
 .blurCircle_3 {
-  top: 1500px;
-  right: -387px;
+  bottom: 0;
+  right: 0;
 }
 .blurCircle_4 {
-  top: 2000px;
-  left: -387px;
+  bottom: 0;
+  left: 0;
 }
 
 
 
 @media screen and (max-width: 500px) {
   body {
-    width: 500px;
+    width: 100vw;
   }
   main {
     width: 100%;
   }
-
-
   .btn {
-    /* width: 224px; */
-    padding: 7px 30px;
-    border-radius: 50px;
-    font-size: 12px;
-    line-height: 17px;
-    margin-bottom: 10px;
+    /* width: 224px*$TELvw; */
+    padding: 0.54444vw 5.33333vw;
+    border-radius: 13.88889vw;
+    font-size: 3.33333vw;
+    line-height: 4.72222vw;
+    margin-bottom: 2.77778vw;
   }
-
-
-
-
   .blurCircle {
-    width: 250px;
-    height: 250px;
+    width: 69.44444vw;
+    height: 69.44444vw;
     background: #00D1FF;
-    filter: blur(894px);
-
+    -webkit-filter: blur(248.33333vw);
+            filter: blur(248.33333vw);
     position: absolute;
     z-index: -1;
   }
@@ -147,15 +158,15 @@ ul {
     right: 0;
   }
   .blurCircle_2 {
-    top: 500px;
+    top: 138.88889vw;
     left: 0;
   }
   .blurCircle_3 {
-    top: 1000px;
+    bottom: 0;
     right: 0;
   }
   .blurCircle_4 {
-    top: 2000px;
+    bottom: 0;
     left: 0;
   }
 }

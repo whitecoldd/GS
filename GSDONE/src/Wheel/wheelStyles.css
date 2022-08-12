@@ -1,87 +1,93 @@
 .sc-bdfBwQ {
-    display: none;
+  display: none;
 }
 
 .bg {
-    position: relative;
+  position: relative;
 }
-.spinStatic {
-    width: 31.34px;
-    height: 48.38px;
 
-    position: absolute;
-    top: 143px;
-    right: 143px;
-    z-index: 10;
-    transform: rotate(42deg);
+.spinStatic {
+  width: 2.17639vw;
+  height: 3.35972vw;
+  position: absolute;
+  top: 9.93056vw;
+  right: 9.93056vw;
+  z-index: 10;
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
 }
+
 .spinStatic img,
 .circleRing img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .circleRing {
-    width: 430px;
-    height: 430px;
-    position: absolute;
-    top: 85px;
-    left: 85px;
-    z-index: 9;
+  width: 29.86111vw;
+  height: 29.86111vw;
+  position: absolute;
+  top: 5.90278vw;
+  left: 5.90278vw;
+  z-index: 9;
 }
+
 
 
 
 
 @media screen and (max-width: 500px) {
-    .modal-window {
-        height: 100%;
-        flex-direction: column;
-        overflow: auto;
-        padding-bottom: 50px;
-    }
-    .modal-window > #centerBg {
-        margin: 0;
-        padding: 40px;
-    }
-    .modal-window .sc-gsTCUz {
-        width: 50vw;
-        height: 50vw;
-    }
-    .modal-window .modal-header {
-        font-size: 24px;
-        line-height: 42px;
-        margin-bottom: 20px;
-    }
-    .modal-window .win-msg {
-        padding: 0 30px;
-        font-size: 18px;
-        line-height: 35px;
-        margin-top: 20px;
-    }
-    .modal-window .button2 {
-        margin-top: 30px;
-    }
-    .modal-window .winning-text {
-        margin-top: 70px;
-    }
-    .spinStatic {
-        width: 27px;
-        height: 43px;
-        top: 70px;
-        right: 85px;
-    }
-    .circleRing {
-        width: 250px;
-        height: 250px;
-        top: 42px;
-        left: 55px;
-    }
-
-    .ReactModal__Content {
-        height: 90%;
-        overflow: hidden;
-        padding-top: 30px;
-    }
+  .modal-window {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: auto;
+    padding-bottom: 3.47222vw;
+  }
+  .modal-window > #centerBg {
+    margin: 0;
+    padding: 2.77778vw;
+  }
+  .modal-window .sc-gsTCUz {
+    width: 50vw;
+    height: 50vw;
+  }
+  .modal-window .modal-header {
+    font-size: 1.66667vw;
+    line-height: 2.91667vw;
+    margin-bottom: 1.38889vw;
+  }
+  .modal-window .win-msg {
+    padding: 0 2.08333vw;
+    font-size: 1.25vw;
+    line-height: 2.43056vw;
+    margin-top: 1.38889vw;
+  }
+  .modal-window .button2 {
+    margin-top: 2.08333vw;
+  }
+  .modal-window .winning-text {
+    margin-top: 4.86111vw;
+  }
+  .spinStatic {
+    width: 1.875vw;
+    height: 2.98611vw;
+    top: 4.86111vw;
+    right: 5.90278vw;
+  }
+  .circleRing {
+    width: 17.36111vw;
+    height: 17.36111vw;
+    top: 2.91667vw;
+    left: 3.81944vw;
+  }
+  .ReactModal__Content {
+    height: 90%;
+    overflow: hidden;
+    padding-top: 2.08333vw;
+  }
 }
