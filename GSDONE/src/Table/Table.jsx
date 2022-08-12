@@ -12,7 +12,7 @@ const TableComponent = () => {
     const getItems = async () => {
       try {
         const res = await axios.get(
-          `https://giftspace.herokuapp.com/api/table/find`
+          `https://giftspace.herokuapp.com/api/table/find/`
         );
         setItems(res.data);
       } catch (e) {}
