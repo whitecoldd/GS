@@ -163,7 +163,7 @@ export default function TopForm({ Open, setOpen, Data, setData }) {
               <input
                 type="text"
                 onChange={handleChange}
-                {...register("egift_number", { required: true })}
+                {...register("egift_number", { required: true , unique: true})}
                 placeholder="E-gift Number"
                 name="egift_number"
               />
