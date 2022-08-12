@@ -15,9 +15,9 @@ const countries = [
   { label: "Cahul", id: 3 },
 ];
 
-export default function TopForm({ Open, setOpen, Data, setData }) {
+export default function TopForm({ Open, setOpen, Data, setData, currAmount, setcurrAmount }) {
   let [totalAmount, settotalAmount] = useState(1000);
-  let [currAmount, setcurrAmount] = useState(0);
+ 
 
   let [formData, setFormData] = useState([]);
   const {
@@ -38,18 +38,7 @@ export default function TopForm({ Open, setOpen, Data, setData }) {
   }, []);
 
   let interval = (24 / totalAmount) * 60 * 60 * 1000;
-
-  const func = () => {
-    let date = new Date();
-    let currDate =
-      date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-    let newTime = new Date(currDate).getTime();
-    let AmountNow = (
-      (Date.now() - newTime) /
-      interval
-    ).toFixed(); /*  / 1000 / 60 / 60 */
-    setcurrAmount(AmountNow);
-  };
+  
 
   
 

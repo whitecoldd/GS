@@ -39,16 +39,32 @@ function App() {
     document.addEventListener("keydown", handleEscapeKey);
     return () => document.removeEventListener("keydown", handleEscapeKey);
   }, []);
-
+  let [currAmount, setcurrAmount] = useState(0);
+  const func = () => {
+    let date = new Date();
+    let currDate =
+      date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+    let newTime = new Date(currDate).getTime();
+    let AmountNow = (
+      (Date.now() - newTime) /
+      interval
+    ).toFixed(); /*  / 1000 / 60 / 60 */
+    setcurrAmount(AmountNow);
+  };
   return (
     <div className="App">
       <Header />
       <main className="main">
-        <TopForm Open={Open} Data={Data} setData={setData} setOpen={setOpen} />
+        <TopForm Open={Open} Data={Data} setcurrAmount={setcurrAmount} currAmount={currAmount} setData={setData} setOpen={setOpen} />
         <Roadmap />
-        <TableComponent />
+        <TableComponent currAmount={currAmount} setcurrAmount={setcurrAmount} />
         <Modal isOpen={Open} style={customStyles}>
-          <WheelOfFortune Open={Open} Data={Data} setData={setData} setOpen={setOpen} />
+          <WheelOfFortune
+            Open={Open}
+            Data={Data}
+            setData={setData}
+            setOpen={setOpen}
+          />
         </Modal>
 
         <div className="blurCircle blurCircle_1"></div>
@@ -56,7 +72,7 @@ function App() {
         <div className="blurCircle blurCircle_3"></div>
         <div className="blurCircle blurCircle_4"></div>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

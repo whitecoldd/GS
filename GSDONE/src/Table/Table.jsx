@@ -6,7 +6,7 @@ import randoms from "generate-random-data";
 
 import "./table.css";
 
-const TableComponent = () => {
+const TableComponent = (currAmount, setcurrAmount) => {
   const [Items, setItems] = useState([]);
   useEffect(() => {
     const getItems = async () => {
@@ -34,7 +34,7 @@ const TableComponent = () => {
   return (
     <Container className="clutch" id="table">
       <div className="title"><span>Our </span>winners</div>
-      {Items.slice(rand, rand1).map((data, i) => (
+      {Items.slice(currAmount-7, currAmount).map((data, i) => (
         <Container key={i} className="clutch">
           <Row className="clutch">
             <Col className="row-like">
