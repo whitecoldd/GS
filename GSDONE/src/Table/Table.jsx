@@ -37,6 +37,8 @@ const TableComponent = (currAmount, setcurrAmount) => {
   //   }
   // }
   console.log(typeof currAmount)
+  console.log(currAmount)
+  let num = Number(currAmount)
   return (
     <Container className="clutch" id="table">
       <div className="title">
@@ -46,7 +48,7 @@ const TableComponent = (currAmount, setcurrAmount) => {
         <Container key={i} className="clutch">
           <Row className="clutch">
             <Col className="row-like">
-              <span className="bold">#{Number(currAmount)}</span>
+              <span className="bold">#{num-i}</span>
               <span className="start">{data.company}</span>
               <span>{data.win_check}$</span>
               <span>{dayjs(data.createdAt).format("DD.MM.YYYY")}</span>
