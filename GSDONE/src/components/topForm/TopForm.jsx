@@ -86,6 +86,7 @@ export default function TopForm({ Open, setOpen, Data, setData }) {
       setData(true);
     } catch (e) {
       console.log(e);
+      setformValidated(false);
     }
   };
 
@@ -168,7 +169,7 @@ export default function TopForm({ Open, setOpen, Data, setData }) {
                 name="egift_number"
               />
               <input
-                type="text"
+                type="email"
                 onChange={handleChange}
                 {...register("email", { required: true })}
                 placeholder="E-Mail"
@@ -196,6 +197,7 @@ export default function TopForm({ Open, setOpen, Data, setData }) {
             {errors.country && <p>Please fill in all fields</p>}
             {errors.email && <p>Please fill in all fields</p>}
             {errors.egift_number && <p>Please fill in all fields</p>}
+            {!setformValidated && <p>This e-gift number has already been used</p>}
           </form>
         </div>
       </div>
