@@ -38,7 +38,7 @@ const TableComponent = (currAmount, setcurrAmount) => {
         <Container key={i} className="clutch">
           <Row className="clutch">
             <Col className="row-like">
-              <span className="bold">#{[currAmount]-7}</span>
+              <span className="bold">#{[currAmount-i]}</span>
               <span className="start">{data.company}</span>
               <span>{data.win_check}$</span>
               <span>{dayjs(data.createdAt).format("DD.MM.YYYY")}</span>
