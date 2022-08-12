@@ -30,15 +30,18 @@ const TableComponent = (currAmount, setcurrAmount) => {
   //     }
   //     return [random2, random1];
   //   }, [random2, random1]);
-
+  const [Num, setNum] = useState([]);
+  setNum(currAmount);
   return (
     <Container className="clutch" id="table">
-      <div className="title"><span>Our </span>winners</div>
-      {Items.slice(rand, rand+7).map((data, i) => (
+      <div className="title">
+        <span>Our </span>winners
+      </div>
+      {Items.slice(rand, rand + 7).map((data, i) => (
         <Container key={i} className="clutch">
           <Row className="clutch">
             <Col className="row-like">
-              <span className="bold">#{currAmount-i}</span>
+              <span className="bold">#{Num - 7}</span>
               <span className="start">{data.company}</span>
               <span>{data.win_check}$</span>
               <span>{dayjs(data.createdAt).format("DD.MM.YYYY")}</span>
