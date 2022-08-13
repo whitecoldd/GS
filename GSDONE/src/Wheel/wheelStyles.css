@@ -10,8 +10,8 @@
   width: 2.17639vw;
   height: 3.35972vw;
   position: absolute;
-  top: 9.93056vw;
-  right: 9.93056vw;
+  right: 8.53056vw;
+  top: 8.13056vw;
   z-index: 10;
   -webkit-transform: rotate(42deg);
           transform: rotate(42deg);
@@ -26,14 +26,13 @@
 }
 
 .circleRing {
-  width: 29.86111vw;
-  height: 29.86111vw;
-  position: absolute;
-  top: 5.90278vw;
-  left: 5.90278vw;
-  z-index: 9;
+    height: 23.56111vw;
+    left: 5.40278vw;
+    position: absolute;
+    top: 5.30278vw;
+    width: 23.56111vw;
+    z-index: 9;
 }
-
 
 
 
@@ -57,9 +56,9 @@
     height: 50vw;
   }
   .modal-window .modal-header {
-    font-size: 1.66667vw;
-    line-height: 2.91667vw;
-    margin-bottom: 1.38889vw;
+      font-size: 3.66667vw;
+      line-height: 4.91667vw;
+      margin-bottom: 1.38889vw;
   }
   .modal-window .win-msg {
     padding: 0 2.08333vw;
@@ -74,16 +73,16 @@
     margin-top: 4.86111vw;
   }
   .spinStatic {
-    width: 1.875vw;
-    height: 2.98611vw;
-    top: 4.86111vw;
-    right: 5.90278vw;
+      height: 5.98611vw;
+      right: 17.50278vw;
+      top: 9.56111vw;
+      width: 3.875vw;
   }
   .circleRing {
-    width: 17.36111vw;
-    height: 17.36111vw;
-    top: 2.91667vw;
-    left: 3.81944vw;
+      height: 49.36111vw;
+      left: 11.11944vw;
+      top: 2.91667vw;
+      width: 49.36111vw;
   }
   .ReactModal__Content {
     height: 90%;
