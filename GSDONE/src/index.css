@@ -211,9 +211,9 @@ canvas.hmocIu {
   margin-bottom: 0vw;
 }
 
-.start {
+/* .start {
   text-align: justify !important;
-}
+} */
 
 .button {
   background: -webkit-gradient(linear, right top, left top, from(#43153c), to(#ae0950));
