@@ -437,8 +437,9 @@
     width: 100%;
   }
   .topForm_form .btn {
-    font-size: 2.91667vw;
-    line-height: 3.88889vw;
+    font-size: 3.91667vw;
+    line-height: 4.88889vw;
     margin-top: 5vw;
+    padding: 1.54444vw 8.33333vw;
   }
 }
