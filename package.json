@@ -9,13 +9,15 @@
     "start": "node index.js",
     "GSDONE": "npm start --prefix GSDONE",
     "install-GSDONE": "npm install --prefix GSDONE",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --force --prefix GSDONE && npm run build --prefix GSDONE"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --force --prefix GSDONE && npm run build --prefix GSDONE",
+    "my-script": "concurrently  --kill-others-on-fail \"npm run start\" \"cd GSDONE && npm install --force && npm run build\""
   },
   "author": "whitecoldd",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
     "body-parser": "^1.20.0",
+    "concurrently": "^7.3.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
