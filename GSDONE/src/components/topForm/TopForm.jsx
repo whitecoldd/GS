@@ -168,6 +168,8 @@ export default function TopForm({ Open, setOpen, Data, setData, currAmount, setc
                 type="text"
                 onChange={handleChange}
                 {...register("egift_number", { required: true , unique: true})}
+                minLength={6}
+                maxLength={12}
                 placeholder="E-gift Number"
                 name="egift_number"
               />

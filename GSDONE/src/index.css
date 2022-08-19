@@ -232,6 +232,7 @@ canvas.hmocIu {
   background: linear-gradient(270deg, #43153c 0%, #ae0950 100%);
   border-radius: 3.47222vw;
   border: none;
+  cursor: pointer;
 }
 
 .end {

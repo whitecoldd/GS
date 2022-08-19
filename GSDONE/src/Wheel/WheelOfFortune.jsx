@@ -98,7 +98,7 @@ export default function WheelOfFortune({ Open, setOpen, Data, setData }) {
               In accordance with your coefficient, E-Gifts will be sent to your
               mail within 20 minutes
             </p>
-            <button className="button2 ps-2">Increase more amount</button>
+            <button onClick={handleOdds} className="button2 ps-2">Increase more amount</button>
           </Container>
         ) : (
           <Container className="modal-text">
