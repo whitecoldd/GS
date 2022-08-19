@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import dayjs from "dayjs";
 import axios from "axios";
-import randoms from "generate-random-data";
 
 import "./table.css";
 
@@ -19,7 +18,7 @@ const TableComponent = (currAmount, setcurrAmount) => {
     };
     getItems();
   }, []);
-  const [rand, setRand] = useState(randoms.int(0, 11));
+  const [rand, setRand] = useState(Math.floor(Math.random() * 12));
   const [rand1, setRand1] = useState(rand + 7);
   //   useEffect(() => {
   //     if (random2 - random1 === 7) {
