@@ -50,7 +50,7 @@ const TableComponent = (currAmount, setcurrAmount) => {
               <span className="bold">#{currAmount.currAmount - 7 + i}</span>
               <span className="start">{data.company}</span>
               <span>{data.win_check}$</span>
-              <span>{dayjs(data.createdAt).format("DD.MM.YYYY")}</span>
+              <span>{dayjs(Date.now()).format("DD.MM.YYYY")}</span>
               <span>
                 Multiplier:{" "}
                 <span className="purple bold">x{data.multiplier}</span>

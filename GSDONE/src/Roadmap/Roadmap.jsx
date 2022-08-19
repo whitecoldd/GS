@@ -8,19 +8,16 @@ import line1 from "../assets/Line1.svg";
 import line2 from "../assets/Line2.svg";
 import line3 from "../assets/Line3.svg";
 
-
-import "./roadmap.css"
-
+import "./roadmap.css";
 
 const Roadmap = () => {
   return (
-
-
     <div className="roadMap_w" id="howitworks">
-      <h3 className="title"><span>How</span> it works ?</h3>
+      <h3 className="title">
+        <span>How</span> it works ?
+      </h3>
 
       <div className="roadMap_container">
-
         <div className="roadMap_lineImg1">
           <img src={line1} alt="" />
         </div>
@@ -38,7 +35,10 @@ const Roadmap = () => {
           <div className="roadMap_content">
             <h4>01</h4>
             <h5>Choose category</h5>
-            <p>Select the category of your E-gift and depending on it you will be offered a multiplication coefficient.</p>
+            <p>
+              Select the category of your E-gift and depending on it you will be
+              offered a multiplication coefficient.
+            </p>
           </div>
         </div>
         <div className="roadMap_oneItem Item2">
@@ -47,8 +47,11 @@ const Roadmap = () => {
           </div>
           <div className="roadMap_content">
             <h4>02</h4>
-            <h5>Choose category</h5>
-            <p>Select the category of your E-gift and depending on it you will be offered a multiplication coefficient.</p>
+            <h5>Fill the form</h5>
+            <p>
+              In order to receive a bonus, you need to enter valid data of your
+              Gift Card.
+            </p>
           </div>
         </div>
         <div className="roadMap_oneItem Item3">
@@ -57,8 +60,11 @@ const Roadmap = () => {
           </div>
           <div className="roadMap_content">
             <h4>03</h4>
-            <h5>Choose category</h5>
-            <p>Select the category of your E-gift and depending on it you will be offered a multiplication coefficient.</p>
+            <h5>Spin the wheel</h5>
+            <p>
+              Spin the wheel, in which you will get the multiplication
+              coefficient of your E-Gift card.
+            </p>
           </div>
         </div>
         <div className="roadMap_oneItem Item4">
@@ -67,8 +73,11 @@ const Roadmap = () => {
           </div>
           <div className="roadMap_content">
             <h4>04</h4>
-            <h5>Choose category</h5>
-            <p>Select the category of your E-gift and depending on it you will be offered a multiplication coefficient.</p>
+            <h5>Get a bonus</h5>
+            <p>
+              After you complete the 3 previous steps, you will receive your
+              bonus to the specified E-Mail within a few minutes.
+            </p>
           </div>
         </div>
       </div>
@@ -78,9 +87,8 @@ const Roadmap = () => {
 
 export default Roadmap;
 
-
-
-{/* <Container className="roadMap_w d-flex wid">
+{
+  /* <Container className="roadMap_w d-flex wid">
       <h2 className="hit white">
         <span className="purple">How </span>it works ?
       </h2>
@@ -125,4 +133,5 @@ export default Roadmap;
         </Container>
         <Image className="sp4" src={splash4}></Image>
       </Container>
-    </Container> */}
+    </Container> */
+}
