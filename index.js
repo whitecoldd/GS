@@ -19,7 +19,6 @@ mongoose
     console.log(err);
   });
 app.use(cors());
-
 app.use(bodyParser.json());
 
 // const init = async () => {
