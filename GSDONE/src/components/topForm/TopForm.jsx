@@ -4,15 +4,30 @@ import axios from "axios";
 import Cards from "../../assets/img/topFormCards.png";
 import { useForm } from "react-hook-form";
 const cats = [
-  { label: "Categ1", id: 1 },
-  { label: "Categ2", id: 2 },
-  { label: "Categ3", id: 3 },
+  { label: "Razer Gold", id: 1 },
+  { label: "Home Depot", id: 2 },
+  { label: "Sephora ", id: 3 },
+  { label: "Saks Fifth Avenue ", id: 4 },
+  { label: "Apple Gift Card ", id: 5 },
+  { label: "Xbox USA ", id: 6 },
+  { label: "PlayStation USA ", id: 7 },
+  { label: "iTunes", id: 8 },
+  { label: "Steam USD", id: 9 },
+  { label: "Google Play USA ", id: 10 },
+  { label: "EBay", id: 11 },
+  { label: "Offgamers", id: 12 },
+  { label: "Egifter", id: 13 },
+  { label: "Nintendo eShop", id: 14 },
+  { label: "Love’s", id: 15 },
+  { label: "Best Buy", id: 16 },
+  { label: "Walmart", id: 17 },
+  { label: "GameStop", id: 18 },
 ];
 
 const countries = [
-  { label: "Comrat", id: 1 },
-  { label: "Chisinau", id: 2 },
-  { label: "Cahul", id: 3 },
+  { label: "USA", id: 1 },
+  { label: "Canada", id: 2 },
+  { label: "Australia", id: 3 },
 ];
 
 export default function TopForm({ Open, setOpen, Data, setData, currAmount, setcurrAmount, interval, func, totalAmount }) {
