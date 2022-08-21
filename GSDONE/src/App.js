@@ -39,14 +39,18 @@ function App() {
     document.addEventListener("keydown", handleEscapeKey);
     return () => document.removeEventListener("keydown", handleEscapeKey);
   }, []);
+
+
+
+
+
   let [totalAmount, settotalAmount] = useState(1000);
   let [currAmount, setcurrAmount] = useState(0);
   let interval = (24 / totalAmount) * 60 * 60 * 1000;
 
   const func = () => {
     let date = new Date();
-    let currDate =
-      date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+    let currDate = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
     let newTime = new Date(currDate).getTime();
     let AmountNow = (
       (Date.now() - newTime) /
