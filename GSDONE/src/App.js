@@ -47,7 +47,7 @@ function App() {
   const func = () => {
     let date = new Date();
     let currDate =
-      date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+      date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
     let newCurrDate = Date.parse(currDate.toString());
     let newTime = new Date(newCurrDate).getTime();
     let AmountNow = (Date.now() - newTime) / interval; /*  / 1000 / 60 / 60 */
