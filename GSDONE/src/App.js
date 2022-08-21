@@ -46,10 +46,9 @@ function App() {
 
   const func = () => {
     let date = new Date();
-    let currDate =
-      date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-    let newCurrDate = Date.parse(currDate);
-    let newTime = new Date(newCurrDate).getTime();
+    let currDate = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " + "00:00:00";
+    // let newCurrDate = Date.parse(currDate);
+    let newTime = new Date(currDate.replace(' ', 'T')).getTime();
     let AmountNow = (Date.now() - newTime) / interval; /*  / 1000 / 60 / 60 */
     setcurrAmount(parseInt(AmountNow));
   };
