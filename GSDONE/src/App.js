@@ -50,7 +50,7 @@ function App() {
 
   const func = () => {
     let date = new Date();
-    let currDate = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+    let currDate = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " + "00:00:00";
     let newTime = new Date(currDate).getTime();
     let AmountNow = (
       (Date.now() - newTime) /
